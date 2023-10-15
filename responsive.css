@@ -1,0 +1,159 @@
+:root{
+    --text-color: #f5f5f5;
+    --hover-color: #12f7ff;
+    --bg-color: #250821;
+    --secon-bg-color:#292e33;
+    --big-font: 2.5rem;
+    --normal-font:2rem;
+    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --h2-font:3ren;
+    --font-neon-text-shadow:0 0 10px rgba(18,227,255,0,3),
+    0 0 20px rgba(18,227,255,0,3),
+    0 0 30px rgba(18,227,255,0,3),
+    0 0 50px rgba(18,227,255,0,3),
+    0 0 70px rgba(18,227,255,0,3),
+    0 0 80px rgba(18,227,255,0,3),
+    0 0 100px rgba(18,227,255,0,3),
+    0 0 150px rgba(18,227,255,0,3),
+}
+
+
+@media(max-width:991px){
+    header,
+    header.sticky{
+        padding: 10px 5%;
+    }
+    footer{
+        padding: 15px 5%;
+    }
+    section{
+        padding: 50px 5%;
+    }
+    .navlist a{
+        padding: 8px 10px;
+    }
+    :root{
+        --big-font: 2.2rem;
+        --normal-font:1.8rem;
+        --neon-box-shadow:0 0 .8rem #12f7ff;
+        --h2-font:3ren;
+    }
+    .home-contact{
+        margin-top: 5rem;
+        
+    }
+    .social-icons{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 0 5%;
+        transition: all .45s ease;
+    }
+
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .home.image{
+        margin-bottom: 5rem;
+    }
+    .liquid-shape{
+        width: 80%;
+        left: 10%;
+        top: 13%;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+
+    .fillter-buttons{
+        margin: 2.5rem 0;
+    }
+
+    footer p{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:420px){
+    html{
+        font-size: 80%;
+    }
+
+    footer p{
+        font-size: .6rem;
+    }
+
+    .fillter-buttons .button{
+        font-size: .8rem;
+    }
+    .about{
+        margin-right: -180px; /*  add about section margin right */
+
+    }
+    #btn-read{
+        margin-left: 160px;
+         
+    }
+    .img-about img{
+        /* max-width: 100%;
+        height: 100%; */
+        width: 300px;
+    }
+
+    .info-about1,.info-about2,.info-about3{
+        display: none;
+    }
+    
+    .img-about p{
+        font-size: 1rem;
+    }
+    .section-services{
+        margin-left: 150px;
+    }
+    .skills{
+        margin-right: -100px;
+        margin-left: 79px;
+    }
+    .scroll-scale span{
+         text-align: center;
+          
+    }
+    .main-text{
+         margin-left: 70px;
+    }
+    .main-text h2{
+        font-size: 40px;
+        margin-left: -133px
+    }
+
+
+}
